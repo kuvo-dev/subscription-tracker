@@ -71,13 +71,13 @@ npm install
 ```
 
 ### 3. Set up MySQL database
-- Create the database using the script in `database_schema.sql`
-- Default credentials in `server.js`:
-  ```
-  user: 'root'
-  password: 'password'
-  database: 'SubscriptionTracker'
-  ```
+- Run the SQL setup in `database_schema.sql` using MySQL Workbench or CLI.
+- Create a `.env` file in the root of your project with the following:
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=SubscriptionTracker
+> You can refer to `.env.sample` in the project for structure.
 
 ### 4. Run the server
 ```bash
@@ -92,6 +92,8 @@ Visit `http://localhost:3000` in your browser.
 - This project is not deployed yet
 - Frontend uses vanilla JS (no frameworks)
 - Designed as a learning project for full-stack fundamentals
+- This project uses a `.env` file to store database credentials securely.
+- Be sure to add your own `.env` file.
 
 ---
 
