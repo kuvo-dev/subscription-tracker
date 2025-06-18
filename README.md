@@ -73,11 +73,15 @@ npm install
 ### 3. Set up MySQL database
 - Run the SQL setup in `database_schema.sql` using MySQL Workbench or CLI.
 - Create a `.env` file in the root of your project with the following:
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=SubscriptionTracker
-> You can refer to `.env.sample` in the project for structure.
+
+	```env
+	DB_HOST=localhost
+	DB_USER=root
+	DB_PASSWORD=yourpassword
+	DB_NAME=SubscriptionTracker
+	```
+	
+> You can refer to .env.sample in the project for structure.
 
 ### 4. Run the server
 ```bash
@@ -94,6 +98,19 @@ Visit `http://localhost:3000` in your browser.
 - Designed as a learning project for full-stack fundamentals
 - This project uses a `.env` file to store database credentials securely.
 - Be sure to add your own `.env` file.
+
+---
+
+## Screenshots
+
+### Index
+<img src="public/screenshot-index.jpg" width="700"/>
+
+### Home Page
+<img src="public/screenshot-home.jpg" width="700"/>
+
+### Add Subscription Modal
+<img src="public/screenshot-modal.jpg" width="700"/>
 
 ---
 
