@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body id="home" class="fade-in">
+    <div>
+
+
+
+          <!-- START OF TOP SECTION -->
+          <div class="top-bar" id="home-content">
+              <div>
+                <img class="bodylogo" src="bodylogo.png" alt="Tracker Logo" />
+              </div>
+              <div>
+                <img class="avatar" src="avatar.png" alt="Profile Avatar" />
+              </div>
+          </div>
+          <!-- END OF TOP SECTION -->
+
+
+
+        <div class="body-container">
+            <!-- START OF LEFT SECTION-->
+            <div class="left">
+              <div class="table-container">
+                <div class="box-title">LIST OF SUBSCRIPTIONS</div>
+                
+                <div class="box-table subscription-table">
+                <!-- TABLE CONTENTS -->
+                <table class="subscription-table">
+                  <thead>
+                    <tr>
+                      <th class="wide">Name</th>
+                      <th class="medium">Amount</th>
+                      <th class="medium">Frequency</th>
+                      <th class="wide">Category</th>
+                      <th class="wide">Card Used</th>
+                      <th class="medium">User</th>
+                      <th class="narrow">Date Due</th>
+                    </tr>
+                  </thead>
+                  <tbody id="subscription-table-body">
+
+                  </tbody>
+                </table>
+
+
+
+
+
+
+                </div>
+              </div>
+              <!-- BOTTOM SECTION -->
+              <div class="bottom-divider"></div>
+
+              <div class="box box-info">
+                <span>NO. OF ACTIVE SUBSCRIPTIONS: 0</span>
+              </div>
+              
+              <div class="box box-button subbtn">ADD SUBSCRIPTION</div>
+            </div>
+            <!-- END OF LEFT SECTION-->
+            
+
+            <div class="middle-divider"></div>
+
+
+            <!-- START OF RIGHT SECTION -->
+            <div class="right">
+            <div class ="box-title-right"> ALL </div>
+            <div class="box-top-right">
+
+              <div class="expense">
+                <p class="label">Monthly Expenses:</p>
+                <p class="amount">$200.00</p>
+              </div>
+            
+              <div class="top-right-divider"></div>
+            
+              <div class="expense">
+                <p class="label">Yearly Expenses:</p>
+                <p class="amount">$1000.00</p>
+              </div>
+
+            </div>
+
+            <div class="right-divider"></div>
+
+            <div class="box box-right">
+              <span class="sort-label"> SORT BY: </span>
+
+              <div class="box sort-box-button box-right-2 sortbtn">name</div>
+              <div class="box sort-box-button box-right-2 sortbtn">date</div>
+              <div class="box sort-box-button box-right-2 sortbtn">category</div>
+              <div class="box sort-box-button box-right-2 sortbtn">price</div>
+
+            </div>
+            
+            </div>
+            <!-- END OF RIGHT SECTION -->
+        </div>
+
+        <div class="modal" id="add-subscription-modal">
+          <div class="modal-content">
+            <h2 class="modal-header">ADD SUBSCRIPTION</h2>
+            <form id="subscription-form" class="form-grid">
+              <!-- Column 1 -->
+              <div class="form-column">
+                <label>SUBSCRIPTION NAME:</label>
+                <input type="text" name="subscription_name" required>
+        
+                <label>PLAN NAME:</label>
+                <input type="text" name="plan_name" required>
+        
+                <label>CATEGORY:</label>
+                <input type="text" name="category_name" required>
+        
+                <label>FREQUENCY:</label>
+                <select name="plan_type" required>
+                  <option value="MONTHLY">MONTHLY</option>
+                  <option value="YEARLY">YEARLY</option>
+                </select>
+        
+                <label>STATUS:</label>
+                <select name="status" required>
+                  <option value="ACTIVE">ACTIVE</option>
+                  <option value="INACTIVE">INACTIVE</option>
+                  <option value="CANCELLED">CANCELLED</option>
+                </select>
+              </div>
+        
+              <!-- Column 2 -->
+              <div class="form-column">
+                <label>AMOUNT:</label>
+                <input type="number" name="price" required>
+        
+                <label>PAYMENT PROVIDER:</label>
+                <input type="text" name="payment_provider" required>
+        
+                <label>PAYMENT TYPE:</label>
+                <select name="payment_type" required>
+                  <option value="CREDIT">CREDIT</option>
+                  <option value="DEBIT">DEBIT</option>
+                </select>
+        
+                <label>LAST 4 DIGITS OF CARD:</label>
+                <input type="text" name="last_four" maxlength="4" required>
+        
+                <label>DATE DUE:</label>
+                <select name="due_day" required>
+                  <option value="" disabled selected>Select Day</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </div>
+        
+              <!-- Column 3 -->
+              <div class="form-column">
+                <label>USER:</label>
+                <input type="text" name="full_name" required>
+        
+                <label>E-MAIL:</label>
+                <input type="email" name="email" required>
+        
+                <div class="form-buttons">
+                  <button type="submit" class="btn-submit">DONE</button>
+                  <button type="button" class="btn-cancel" id="close-modal">NEVERMIND</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+            
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
