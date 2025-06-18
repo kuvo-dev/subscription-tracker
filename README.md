@@ -104,13 +104,13 @@ Visit `http://localhost:3000` in your browser.
 ## Screenshots
 
 ### Index
-<img src="public/screenshot-modal.jpg" width="700"/>
+<img src="public/screenshot-index.jpg" width="700"/>
 
 ### Home Page
 <img src="public/screenshot-home.jpg" width="700"/>
 
 ### Add Subscription Modal
-<img src="public/screenshot-index.jpg" width="700"/>
+<img src="public/screenshot-modal.jpg" width="700"/>
 
 ---
 
